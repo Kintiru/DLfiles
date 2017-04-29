@@ -39,7 +39,7 @@ module.exports = (url,DLpath,item) => {
 
   return new Promise(function(reslove,reject){
 
-    var file = fs.createWiteStream('file.'+item),
+    var file = fs.createWriteStream('file.'+item),
         dlurl = [],
         path = (DLpath.endsWith('/')) ? path : path + '/';
 
